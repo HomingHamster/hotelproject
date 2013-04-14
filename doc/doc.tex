@@ -1,12 +1,16 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
 \usepackage[cm]{fullpage}
+\usepackage{graphicx}
+\usepackage{tikz}
 
 \begin{document}
 \title{CS22310 Hotel Project}
 \author{Felix Farquharson}
 
 \maketitle
-\maketableofcontents
+\tableofcontents
 
 \section{Introduction}
 The purpose of this project is to create a prototype hotel booking system
@@ -19,14 +23,100 @@ project.
 
 \section{Task Analysis}
 \subsection{Needs of System}
+There are many reasons to implement a system such as this. Two of the most
+significant reasons are: That it will reduce the workload on staff that 
+deal with bookings which may lead to lower costs. Also it will improve 
+your customer reach by being available 24/7.
+
+An analysis of further needs follows.
+
 \subsection{Who is involved (Target Audience)?}
+Obviously there are a number of different parties that will be affected by
+the implimentation of a computer based system. The two most obvious will be
+hotel staff and potential customers to the business.
 \subsubsection{Rich Picture}
+A rich picture has been produced to illistrate the different people who will
+be affected by the new system.
+
+\input{diagrams/rich_pic.tex}
+
 \subsubsection{Hotel Staff}
+There many types of hotel staff that may need to use the system.
+\paragraph{Bookings Staff}
+The bookings staff will be the primary staff users of the system because
+they will be the ones who have to input all of the information for the 
+people who choose not to book online. For example every one that phones up
+to make, adjust or cancel a booking will have to speak to these staff.
+
+The bookings staff or receptionists will have to input into their system
+when someone arrives to stay in one of the rooms.
+
+The Bookings staff can afford to spend a little longer learning how to use
+the system if it makes it more efficient for them to use in the long run.
+The primary factor is going to be speed of use.
+
+\paragraph{Management}
+Management staff need to be able to use the system to make sure that targets
+are being met and that their staff are doing their jobs properly. They may 
+also need to use the system to deal with customer complaints and checking that
+the rooms are being used correctly.
+
+\paragraph{Cleaning Staff}
+Cleaning staff will have to clean all of the rooms that have been slept in.
+It would make sense for them to be able to use the system to fin out which
+rooms have been used and therefor which ones need to be cleaned.
+
 \subsubsection{General Public}
+The general public may use the system to find out about up to date pricing
+and available rooms for rental. The look/feel and usability of the system 
+will effect their opinion of the hotel.
+
 \subsubsection{Potential Customers}
+Potential customers will need to be able to find out about costs and to place
+a booking that suits their needs. The may also need to adjust the booking in 
+the future and cancel the booking if they no longer need it.
+
+\subsubsection{Auditors and Investigators}
+If the hotel is run as a business then there will be taxes to pay. These taxes
+may depend on how much business there has been throughout the year. These 
+statistics may be produced by the bookings system. It would be convenient
+if the system could produce accounts of what has happened through the year.
+It may also be useful for business planning because it could show the amount
+of occupied rooms around the year, the busiest times of year and the discounts
+that have been made etc.
+
 \subsection{Booking Systems in Existance}
+\begin{description}
+	\item[Eviivo Frontdesk] Popular hotel and B\&B booking system. 
+		It provides a high level of security, customer reviewing,
+		web space to present the business and financial graphs. 
+		http://www.eviivo.com/our-products/eviivo-frontdesk/
+	\item[Guestmaster] Different versions for different hotels.
+		It provides mail merge and special offer support. It also
+		automatically backs up records. Which is quite important.
+		http://www.guestmaster.com/
+\end{description}
+
 \subsection{Usability Expectations}
 \subsubsection{Description of Available Functions}
+\begin{description}
+	\item[Web space] Allows you to present your business to the
+		customers so that they can get an impression of your hotel
+		before they start the booking process. It is important that
+		the impression is good, otherwise this may act as a negtive
+		point.
+	\item[Online information gathering] This is particularly important
+		because without it you would have very little to make up a
+		booking system. This information is then stored and must be
+		available in the correct places to make sure that the
+		program is usable. The information must allow the system
+		to \"learn\".
+	\item[Online payment] The users should be able to pay for their
+		accomadation online otherwise it would be more complicated
+		to complete the booking process.
+	\item[]
+\end{description}
+
 \subsubsection{Additional Functions}
 \subsection{Use Case Diagram}
 \subsection{Data Flow Diagram}
